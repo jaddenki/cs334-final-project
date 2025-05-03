@@ -5,7 +5,7 @@ function Tree(
   capDist  = 20,
   killDist = 10,
   branchLen = 5,
-  spread = 0.5,
+  spread = 0.8,
   midribCurve = 0.3,
   midribLength = 80
 ) {
@@ -39,7 +39,7 @@ function Tree(
   // petiole
   var petioleBase = createVector(width / 2, height);
   var petioleDir = createVector(0, -1);
-  var petioleLength = 60;
+  var petioleLength = 40;
   
   // petiole base is also the root branch
   var root = new Branch(null, petioleBase, petioleDir);
