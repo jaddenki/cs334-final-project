@@ -3,19 +3,73 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Sketch</title>
-
+    <title>Procedural Leaf Venation</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-
     <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script>
   </head>
 
   <body>
+<<<<<<< Updated upstream
     <script src="tree.js"></script>
     <script src="leaf.js"></script>
     <script src="branch.js"></script>
+=======
+    <div id="controls">
+      <label>leaf venation type:
+        <select id="typeDropdown">
+          <option value="0">palmate</option>
+          <option value="1">dichotomous</option>
+          <option value="2">parallel</option>
+        </select>
+      </label>
+      <br><br>
+  
+      <div id="dichotomousControls">
+        <p>press h to toggle menu</p>
+        <p>made by <a href="https://jadden.xyz" target="_blank">jadden picardal</a></p>
+        <label>initial arc angle: <input type="range" id="arcSpanSlider" min="30" max="180" value="90"></label><br>
+        <label># of veins: <input type="range" id="numVeinsSlider" min="5" max="30" value="8"></label><br>
+        <label>initial length: <input type="range" id="lenSlider" min="100" max="500" value="120"></label><br>
+        <label>max depth/iterations: <input type="range" id="depthSlider" min="2" max="12" value="3"></label><br>
+        <label>fork angle: <input type="range" id="forkAngleSlider" min="1" max="20" value="5"></label><br>
+      </div>
+
+      <div id="palmateControls" style="display: none;">
+        <p>press h to toggle menu</p>
+        <p>made by <a href="https://jadden.xyz" target="_blank">jadden picardal</a></p>
+        <label>auxin count: <input type="range" id="auxinCountSlider" min="100" max="8000" value="7500"></label><br>
+        <label>capture distance: <input type="range" id="captureSlider" min="2" max="50" value="35"></label><br>
+        <label>kill distance: <input type="range" id="killSlider" min="2" max="20" value="5" step="1"></label><br>
+        <label>branch length: <input type="range" id="branchLengthSlider" min="1" max="20" value="5"></label><br>
+
+        <!-- 
+        just for testing
+        <label>Spread: <input type="range" id="spreadSlider" min="0" max="1.5" step="0.1"value=".93"></label><br>
+        <label>Midrib Curvature: <input type="range" id="midribCurveSlider" min="0" max="1" step="0.05" value="0.25"></label><br>
+        <label>Midrib Length: <input type="range" id="midribLengthSlider" min="60" max="200" step="10" value="80"></label> -->
+        <label style="display:block; margin-bottom:8px"><br>
+        <input type="checkbox" id="showAuxinsCheckbox" checked>
+          show auxins
+        </label>
+      </div>
+  <div id="parallelControls" style="display: none;">
+        <p>press h to toggle menu</p>
+        <p>made by <a href="https://jadden.xyz" target="_blank">jadden picardal</a></p>
+    <label>leaf width: <input type="range" id="leafWidthSlider" min="100"  max="5000" value="3000"></label><br>
+    <label>leaf height: <input type="range" id="leafHeightSlider" min="100" max="800" value="400"></label><br>
+    <label>vein count: <input type="range" id="veinCountSlider"  min="5"   max="50"  value="20"></label><br>
+    <label>how many: <input id="petalCountSlider" type="range" min="1" max="12" value="1" /></label><br> 
+  </div>
+  
+      <br>
+      <button id="regenerateButton">regenerate</button>
+    </div>
+  
+    <script src="palmate.js"></script>
+    <script src="dichotomous.js"></script>
+    <script src="parallel.js"></script>
+>>>>>>> Stashed changes
     <script src="shape.js"></script>
     <script src="sketch.js"></script>
   </body>
