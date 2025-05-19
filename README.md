@@ -2,10 +2,7 @@
 # [procedural leaf venation](https://leaf-psi.vercel.app)
 visualize cool leaves :)
 
-
 ![Screenshot 2025-05-02 161429](https://github.com/user-attachments/assets/a1ecfe30-0cc5-42f0-a769-df21c17b4bd0)
-
-![rwar]([https://res.cloudinary.com/dghjime6m/video/upload/v1747590036/2025-05-18_10-39-00_od4bz6.mp4)
 
 - [live demo](https://leaf-psi.vercel.app/)  
 - [source code on github](https://github.com/jaddenki/cs334-final-project)
@@ -64,7 +61,7 @@ those papers and articles helped me understand the science behind the visual aes
 - gpu acceleration with shaders maybe   
 - more leaf types, weird hybrid growths, or procedural flowers
 - growing leaf shape
-
+- fix the hard coded midribs lol
 
 
 
